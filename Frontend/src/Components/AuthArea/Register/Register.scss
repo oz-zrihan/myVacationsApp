@@ -1,0 +1,80 @@
+@import "../../../Assets/main-sass.scss";
+
+.Register {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.Register .form-header {
+  background-color: $dark-blue;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+.Register h3 {
+  color: $light-text;
+  font-weight: 600;
+}
+
+.Register form {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 1px solid $dark-blue;
+  background-color: $main-bg;
+}
+
+.Register .form-body {
+  padding: 1em;
+}
+
+.Register form label {
+  display: block;
+  font-size: $small-text;
+  margin-top: 1em;
+  color: $secondary-text;
+}
+.Register p {
+  display: block;
+  font-size: $small-text;
+  margin: 1em 0 0 0;
+}
+
+.Register p {
+  display: block;
+  font-size: $small-text;
+  margin: 1em 0 0 0;
+}
+.Register input {
+  width: 90%;
+  height: 2.5em;
+  border: 1px solid $secondary-bg;
+  color: $secondary-text;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.Register input::placeholder {
+  color: $secondary-text;
+  font-size: $small-text;
+}
+.Register input:focus {
+  outline: 1px solid $gold;
+}
+
+.Register button {
+  width: 90%;
+  height: 2.5em;
+  border: none;
+  background-color: $dark-blue;
+  color: $light-text;
+  margin: 1.5em 0;
+}
+.Register button:hover {
+  background-color: $gold;
+}

@@ -1,0 +1,48 @@
+@import "../../../../Assets/main-sass.scss";
+
+.countries-chart {
+  border-top: 2px solid $gold;
+  position: relative;
+  height: 50vh;
+  padding-top: 5em;
+  .text-two {
+    fill: $gold;
+  }
+  .text-one {
+    fill: $gold;
+  }
+  .sector-one {
+    fill: $gold;
+  }
+  .main-pie {
+    fill: $dark-blue;
+  }
+  .pie-line {
+    stroke: $gold;
+  }
+
+  .recharts-responsive-container {
+    width: 30em !important;
+    height: 300px;
+    min-width: 0px;
+    margin: 0 auto;
+  }
+
+  table {
+    text-align: left;
+    border: 1px solid $gold;
+    margin: 2em auto;
+    border-collapse: collapse;
+
+    td {
+      border-bottom: 1px solid $gold;
+      padding: 1em;
+    }
+    th {
+      font-size: $regular-text;
+      background-color: $gold;
+      color: $light-text;
+      padding: 1em;
+    }
+  }
+}

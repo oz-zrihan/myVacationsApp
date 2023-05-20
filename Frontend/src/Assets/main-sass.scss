@@ -1,0 +1,51 @@
+// COLORS
+$gold: #c69f51;
+$dark-blue: #0a717c;
+$main-bg: #f1f1f1;
+$secondary-bg: #e7e7e7;
+$dark-bg: #c5c5c5;
+$main-text: #313131;
+$secondary-text: #989898;
+$light-text: #f1f1f1;
+$danger:#c61d1d;
+
+// FONTS
+$headline: 2em;
+$big-text: 1.5em;
+$regular-text: 1em;
+$small-text: .8em;
+
+//button
+
+        .danger-btn{
+           height: 2.5em;
+           width: 8em;
+           color: $danger;
+           border: 1px solid $danger;
+           border-radius: 5px;
+           background-color: $main-bg;
+           cursor: pointer;
+        }
+
+      
+
+        .gold-btn{
+           height: 2.5em;
+           width: 8em;
+           color: $gold;
+           border: 1px solid $gold;
+           border-radius: 5px;
+           background-color: $main-bg;;
+           cursor: pointer;
+        }
+        .blue-btn{
+           height: 2.5em;
+           width: 8em;
+           color: $dark-blue;
+           border: 1px solid $dark-blue;
+           border-radius: 5px;
+           background-color: $main-bg;;
+           cursor: pointer;
+        }
+      
+

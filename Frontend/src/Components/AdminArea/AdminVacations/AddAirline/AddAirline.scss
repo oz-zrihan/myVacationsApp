@@ -1,0 +1,42 @@
+@import "../../../../Assets/main-sass.scss";
+
+.AddAirline {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $secondary-bg;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid $secondary-text;
+  margin-bottom: 1em;
+  label {
+    font-size: $small-text;
+    color: $secondary-text;
+  }
+  .country-name {
+    display: flex;
+    input {
+      height: 2em;
+      width: 80%;
+      text-align: center;
+      margin: 1em 0;
+      background-color: $main-bg;
+      border: 1px solid $dark-bg;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $gold;
+      }
+    }
+    .send-country {
+      width: 20%;
+      margin: 1em 0;
+      border-radius: 0;
+      height: 2.3em;
+      &:hover {
+        color: $light-text;
+        background-color: $dark-blue;
+        border: none;
+      }
+    }
+  }
+}

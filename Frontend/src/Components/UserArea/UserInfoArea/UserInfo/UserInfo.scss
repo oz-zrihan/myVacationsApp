@@ -1,0 +1,21 @@
+@import "../../../../Assets/main-sass.scss";
+
+.UserInfo {
+  a {
+    margin: 0;
+  }
+  .gold-btn:hover {
+    background-color: $gold;
+    color: $light-text;
+    box-shadow: 2px 2px 3px rgba($secondary-text, 0.5);
+  }
+  .blue-btn {
+    width: 10em;
+    margin-left: 1em;
+    &:hover {
+      background-color: $dark-blue;
+      color: $light-text;
+      box-shadow: 2px 2px 3px rgba($secondary-text, 0.5);
+    }
+  }
+}

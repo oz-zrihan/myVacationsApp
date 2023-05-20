@@ -1,0 +1,177 @@
+@import "../../../../Assets/main-sass.scss";
+
+.follower-chart-title {
+  color: $gold;
+  padding-bottom: 0.5em;
+  border-bottom: 1.5px solid $gold;
+  width: 80%;
+  font-size: $headline;
+  margin: 1em auto;
+}
+
+.followersChart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+  flex-direction: column;
+  align-content: center;
+
+  .menu {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    .gold-btn {
+      margin: 0;
+    }
+  }
+  .followers-graph {
+    width: 90%;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .checkbox-wrapper {
+      width: 90%;
+    }
+    .recharts-responsive-container {
+      max-height: 40em;
+      margin-bottom: 2em;
+    }
+
+    .select-country {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      width: 90%;
+      label {
+        color: $gold;
+        font-weight: 600;
+        line-height: 2;
+      }
+      select {
+        width: 10em;
+        height: 2.5em;
+        text-align: center;
+        border: 1px solid $dark-bg;
+        background-color: $main-bg;
+        color: $dark-blue;
+        margin-bottom: 2em;
+      }
+    }
+
+    .chart-bar {
+      fill: $dark-blue;
+      &:hover {
+        fill: $gold;
+      }
+    }
+    .recharts-legend-item {
+      color: $dark-blue;
+      .recharts-legend-icon {
+        fill: $dark-blue;
+      }
+    }
+  }
+
+  a {
+    margin: 0;
+  }
+
+  .gold-btn {
+    width: 10em;
+    margin: 2em 0;
+
+    &:hover {
+      background-color: $gold;
+      color: $light-text;
+    }
+  }
+}
+
+.custom-tooltip {
+  background-color: $secondary-bg;
+  padding: 1em;
+  border: 2px solid $gold;
+  text-align: left;
+  gap: 0.5em;
+  h3 {
+    font-size: large;
+    color: $gold;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid $gold;
+    padding-bottom: 0.5em;
+  }
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+  gap: 1em;
+  .slider {
+    width: 100%;
+    height: 1.5em;
+    position: relative;
+  }
+  .switch {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    width: 3em;
+    margin-right: 1em;
+
+    input {
+      display: none;
+    }
+  }
+
+  .slider {
+    background-color: $dark-bg;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+
+    &:before {
+      background-color: #fff;
+      bottom: 4px;
+      content: "";
+      height: 1em;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      width: 1em;
+    }
+  }
+}
+
+.checkbox-wrapper input:checked + .slider {
+  background-color: $dark-blue;
+}
+
+.checkbox-wrapper input:checked + .slider:before {
+  transform: translateX(140%);
+}
+
+.checkbox-wrapper .slider.round {
+  border-radius: 34px;
+}
+
+.checkbox-wrapper .slider.round:before {
+  border-radius: 50%;
+}
+
+.recharts-bar-rectangle {
+  width: 1em;
+}
+
+.city-name {
+  margin-top: 2em;
+}
+
+.hotel-name {
+  font-size: $small-text;
+}

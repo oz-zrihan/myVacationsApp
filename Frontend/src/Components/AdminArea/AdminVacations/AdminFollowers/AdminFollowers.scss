@@ -1,0 +1,35 @@
+@import "../../../../Assets/main-sass.scss";
+
+.AdminFollowers {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 9;
+  width: 50%;
+  display: flex;
+  border-radius: 50px;
+  padding: 0.5em;
+  background-color: rgba($main-bg, 0.8);
+  border: 1px solid $main-bg;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 1s;
+  &:hover {
+    background-color: $main-bg;
+    transition: 1s;
+  }
+  .followers-wrapper {
+    display: contents;
+    width: auto;
+    height: auto;
+    border: none;
+    background-color: rgba($main-bg, 0);
+    color: $main-text;
+    font-size: $regular-text;
+
+    span:last-of-type {
+      font-weight: 600;
+      margin-left: 0.5em;
+    }
+  }
+}

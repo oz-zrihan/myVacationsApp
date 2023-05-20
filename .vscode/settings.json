@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "fileupload"
+    ],
+    "cSpell.enableFiletypes": [
+        "dockercompose",
+        "dockerfile",
+        "sql"
+    ]
+}
