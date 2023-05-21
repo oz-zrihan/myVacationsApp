@@ -16,19 +16,27 @@ Frontend: React, Express, Redux, SASS, TypeScript.
 ================================================================
 
 The application is made from user interface and admin interface.
-Both need to login first or register.
+Both need to login first...
 
 ![Login Screen](/screenshots/login.png)
+
+... or register
+
 ![Register Screen](/screenshots/register.png)
 
+====== User Interface =====
+
 The user then redirects to "vacations" page.
-the page is composed from filter menu and vacations cards
+the page is composed from filter menu...
 
 ![Filter Menu](/screenshots/userFilter.png)
+
+... and vacations cards.
+By clicking the "like" button the user will add the vacation to is "following" list
 ![Vacation Card](/screenshots/userVacationCard.png)
 ![Vacation Card](/screenshots/userVacationCardOpen.png)
 
-By clicking the "like" button the user will add the vacation to is "following" list
+====== Admin Interface =====
 
 The admin will redirect to "admin-vacations" page.
 the page is composed from filter menu, add vacation button and edit button, also he's able to edit the header slider images
@@ -45,13 +53,16 @@ By clicking the "add vacation" button the admin will redirect to "add-vacation" 
 
 ![Add Vacation](/screenshots/adminAddVacation.png)
 
-By clicking the "Reports" button the admin will redirect to "admin-reports" page
-there his got followers reports for each vacation, and filter menu to filter only "following vacation" or "vacations by country"
+By clicking the "Reports" button the admin will redirect to "admin-reports" page.
+there his got followers reports for each vacation, and filter menu to filter only "following vacation".
 also he's able to download the report as CSV file, the downloaded reports will correspond to the filters that were used.
 
 ![Followers report](/screenshots/adminVacationFollowers.png)
 
-Bellow the admin can see the followers of each country and there email.
+Also he will see "vacations by country",
+where the admin can see the followers of each country and there email.
+
+![Followers report](/screenshots/AdminCountryFollowers.png)
 
 ================================================================
 
