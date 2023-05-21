@@ -64,7 +64,7 @@ function EditUser(): JSX.Element {
           placeholder="* * * * * * * *"
         />
 
-        <button>Send</button>
+        <button className="blue-btn">Send</button>
       </form>
     </div>
   );

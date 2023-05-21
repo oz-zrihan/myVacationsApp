@@ -21,11 +21,13 @@ import catchAll from "./3-middleware/catch-all";
 const server = express();
 
 // Prevent DoS attack:
-server.use(expressRateLimit({
+server.use(
+  expressRateLimit({
     windowMs: 10000,
     max: 10000,
-    message: "To many request"
-}));
+    message: "To many request",
+  })
+);
 
 // Use helmet to defense against malicious headers:
 server.use(

@@ -37,6 +37,9 @@ function MainVacations(): JSX.Element {
   // loader state
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
+  // current page state
+  const [currentPage, setCurrentPage] = useState(1);
+
   // Get all Vacations and Followers
   useEffect(() => {
     setIsLoading(true);
@@ -110,23 +113,23 @@ function MainVacations(): JSX.Element {
           (v) => receivedData.isNotStarted || new Date(v.departureTime) > now
         );
       }
-
       setFilteredVacations(filteredVacations);
     }
   }, [receivedData]);
-
+  
+  
   // Handle page change
   const handlePageChange = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
+    setCurrentPage(pageNumber);    
   };
 
   // Handle received data from filter menu
   function handleDataReceived(data: FilterMenuDataModel): void {
     setReceivedData(data);
+    handlePageChange(1)
   }
 
   // Pagination logic
-  const [currentPage, setCurrentPage] = useState(1);
   const vacationsPerPage = 9;
   const totalPages =
     receivedData === null

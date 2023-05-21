@@ -228,7 +228,7 @@ function EditVacation(props: VacationInformationProps): JSX.Element {
   }
 
   return (
-    <div className="EditVacation">∑
+    <div className="EditVacation">
       <h2>Edit vacation</h2>
 
       <form onSubmit={handleSubmit(send)}>

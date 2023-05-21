@@ -10,6 +10,8 @@ function UserInfo(): JSX.Element {
 
   // Extract user from location
   const user = location.state?.userProp;
+  console.log(user);
+  
 
   // ============================= HTML =============================
   return (
@@ -25,7 +27,8 @@ function UserInfo(): JSX.Element {
         <NavLink to={"/"}>
           <button className="blue-btn"> Back to vacations</button>
         </NavLink>
-        <FollowedVacation user={user} />
+        {user?.roleId === 2 && <FollowedVacation user={user} /> }
+        
       </div>
     </>
   );
