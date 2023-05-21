@@ -33,13 +33,14 @@ the page is composed from filter menu...
 
 ... and vacations cards.
 By clicking the "like" button the user will add the vacation to is "following" list
+
 ![Vacation Card](/screenshots/userVacationCard.png)
 ![Vacation Card](/screenshots/userVacationCardOpen.png)
 
 ====== Admin Interface =====
 
 The admin will redirect to "admin-vacations" page.
-the page is composed from filter menu, add vacation button and edit button, also he's able to edit the header slider images
+the page is composed from filter menu, add vacation button and reports button, also he's able to edit the header slider images
 
 ![Filter Menu](/screenshots/adminFilter.png)
 ![Vacation Card](/screenshots/adminAddVacation.png)
