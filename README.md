@@ -33,6 +33,7 @@ the page is composed from filter menu...
 
 ... and vacations cards.
 By clicking the "like" button the user will add the vacation to is "following" list
+
 ![Vacation Card](/screenshots/userVacationCard.png)
 ![Vacation Card](/screenshots/userVacationCardOpen.png)
 
