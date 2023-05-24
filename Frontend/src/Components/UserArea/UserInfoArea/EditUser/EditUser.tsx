@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import UserModel from "../../../../Models/UserModel";
 // Services
 import usersService from "../../../../Services/UsersService";
+import { NavLink } from "react-router-dom";
 
 function EditUser(): JSX.Element {
   // Use navigate to redirect user after editing
@@ -42,6 +43,7 @@ function EditUser(): JSX.Element {
   return (
     <div className="EditUser">
       <h2>Edit your information</h2>
+      <NavLink to={"/"}> <button className="gold-btn">Cancel and Back to main page</button></NavLink>
 
       <form onSubmit={handleSubmit(send)}>
         <input type="hidden" {...register("userId")} />

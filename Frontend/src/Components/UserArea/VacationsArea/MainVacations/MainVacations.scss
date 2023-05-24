@@ -44,3 +44,62 @@
     }
   }
 }
+
+@media only screen and (max-width: 1450px) {
+  .MainVacations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  
+    .vacation-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+      box-sizing: border-box;
+      width: 85%;
+    }
+  
+    .FilterMenu {
+      display: flex;
+      flex-direction: column;
+      position: sticky;
+      top: 2em;
+      width: 15%;
+      height: 100%;
+      padding-left: 4em;
+      margin-top: 2em;
+      box-sizing: border-box;
+    }
+  
+    .pagination {
+      clear: both;
+      width: 85%;
+      float: right;
+  
+      button {
+        width: 2.5em;
+        border-radius: 50%;
+        margin: 0 0.5em 1em 0.5em;
+  
+        &:hover {
+          color: $light-text;
+          background-color: $dark-blue;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1460px){
+  .MainVacations{
+    .vacation-cards{
+      width: 85%;
+    }
+    .FilterMenu{
+      padding-left: 2em;
+    }
+  }
+}

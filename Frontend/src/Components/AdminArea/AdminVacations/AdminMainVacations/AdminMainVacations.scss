@@ -44,3 +44,15 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 1460px){
+  .AdminMainVacations{
+    .vacation-cards{
+      width: 85%;
+    }
+    .AdminFilterMenu{
+      padding-left: 2em;
+    }
+  }
+}

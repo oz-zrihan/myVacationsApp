@@ -1,0 +1,9 @@
+logging info:
+
+User:
+username: bryceGuestUser@gmail.com
+password: 0000
+
+Admin:
+username: brycevaction@gmail.com
+password: brycevaction1234

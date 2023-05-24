@@ -10,6 +10,14 @@
     margin: 1em auto;
   }
 
+  > a .gold-btn{
+    width: 20%;
+    &:hover{
+      background-color: $gold;
+      color: $light-text;
+    }
+  }
+
   form {
     padding: 2em;
     display: flex;

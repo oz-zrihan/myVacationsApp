@@ -146,3 +146,20 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 1460px){
+  .EditVacation{
+    width: 100%;
+
+    .images-handler-btns{
+      font-size: 10px;
+      .upload-images{
+        width: 65%;
+      }
+      .delete-all-images{
+        width: 30%;
+      }
+    } 
+  }
+}

@@ -273,3 +273,28 @@
     }
   }
 }
+
+
+
+
+@media only screen and (max-width: 1460px){
+  .VacationCard{
+    width: 28em;
+
+    .slider{
+      height: 250px;
+
+      .slider-controls{
+        bottom: 100px;
+      }
+
+      .slider-container{
+        .slider-image{
+          img{
+            max-height: 110%;
+          }
+        }
+      }
+    }
+  }
+}
